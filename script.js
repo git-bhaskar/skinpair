@@ -27941,6 +27941,19 @@ name:p[2]
 };
 });
 
+// ===== LOCAL STORAGE =====
+
+function savePairs(){
+    localStorage.setItem("bgmiPairs", JSON.stringify(pairs));
+}
+
+function loadPairs(){
+    let saved = localStorage.getItem("bgmiPairs");
+    if(saved){
+        pairs = JSON.parse(saved);
+        renderPairs();
+    }
+}
 
 // ===== VARIABLES =====
 
@@ -28020,6 +28033,7 @@ pairs.push({
 have:selectedHave,
 target:selectedTarget
 });
+savePairs();
 
 updateList();
 
@@ -28085,4 +28099,6 @@ a.href=URL.createObjectURL(blob);
 a.download="gun_list.txt";
 a.click();
 
+
 }
+loadPairs();
