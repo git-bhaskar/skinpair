@@ -24134,8 +24134,8 @@ const dumpData = `101001 | 898A0100 | AKM | 3033
 1105001077 | 75FADC41 | PUBGM X aespa - M249 | b622
 1105002001 | 11FEDC41 | Silver Plate - DP-28 | b722
 1105002011 | 1BFEDC41 | Street Art - DP-28 | b822
-1105002012 | 1CFEDC41 | Shark's Bite - DP28 | b922
-1105002013 | 1DFEDC41 | Golden Winged Bat Bite - DP28 | ba22
+1105002012 | 1CFEDC41 | Shark's Bite - DP-28 | b922
+1105002013 | 1DFEDC41 | Golden Winged Bat Bite - DP-28 | ba22
 1105002014 | 1EFEDC41 | Enigmatic Hunter - DP-28 (Lv. 1) | bb22
 1105002015 | 1FFEDC41 | Enigmatic Hunter - DP-28 (Lv. 2) | bc22
 1105002016 | 20FEDC41 | Enigmatic Hunter - DP-28 (Lv. 3) | bd22
@@ -24146,9 +24146,9 @@ const dumpData = `101001 | 898A0100 | AKM | 3033
 1105002023 | 27FEDC41 | Colorful - DP-28 | c222
 1105002024 | 28FEDC41 | Cuckoo Bird - DP-28 | c322
 1105002027 | 2BFEDC41 | Stars & Stripes - DP-28 | c422
-1105002028 | 2CFEDC41 | Metal Medley - DP28 | c522
-1105002030 | 2EFEDC41 | Season 18 - DP28 | c622
-1105002031 | 2FFEDC41 | B.Duck - DP28 | c722
+1105002028 | 2CFEDC41 | Metal Medley - DP-28 | c522
+1105002030 | 2EFEDC41 | Season 18 - DP-28 | c622
+1105002031 | 2FFEDC41 | B.Duck - DP-28 | c722
 1105002032 | 30FEDC41 | Gilded Jade Dragon - DP-28 (Lv. 2) | c822
 1105002033 | 31FEDC41 | Gilded Jade Dragon - DP-28 (Lv. 3) | c922
 1105002034 | 32FEDC41 | Gilded Jade Dragon - DP-28 (Lv. 4) | ca22
@@ -24160,7 +24160,7 @@ const dumpData = `101001 | 898A0100 | AKM | 3033
 1105002042 | 3AFEDC41 | Midnight Lantern - DP-28 | d022
 1105002045 | 3DFEDC41 | Retro Tunes - DP-28 | d122
 1105002046 | 3EFEDC41 | Nebular Dreams - DP-28 | d222
-1105002047 | 3FFEDC41 | Radiant Phoenix Adarna - DP28 | d322
+1105002047 | 3FFEDC41 | Radiant Phoenix Adarna - DP-28 | d322
 1105002048 | 40FEDC41 | Drum Sensation - DP-28 | d422
 1105002051 | 43FEDC41 | Precision Artistry - DP-28 | d522
 1105002053 | 45FEDC41 | Fresh Carrot - DP-28 | d622
@@ -27935,8 +27935,8 @@ const dumpData = `101001 | 898A0100 | AKM | 3033
 const skins = dumpData.trim().split("\n").map(line=>{
 const p = line.split("|").map(x=>x.trim());
 return {
-id:p[0],
-hex:p[1],
+hex:p[0],
+id:p[1],
 name:p[2]
 };
 });
@@ -28101,3 +28101,4 @@ a.click();
 
 }
 loadPairs();
+
