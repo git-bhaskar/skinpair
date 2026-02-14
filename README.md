@@ -1,4 +1,4 @@
-Website
-git-bhaskar.github.io/skinpair
+🌐 Website<p>
+https://git-bhaskar.github.io/skinpair
 
-Notes: Always clear page cookies after exporting.
+<b>Notes:</b> Always clear page cookies after exporting.
